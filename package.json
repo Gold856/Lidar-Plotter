@@ -1,0 +1,36 @@
+{
+  "name": "lidar-visualizer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A plugin to visualize Lidar data",
+  "author": "Gold856",
+  "email": "117957790+Gold856@users.noreply.github.com",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "plugin"
+  ],
+  "main": "./plugin/index.js",
+  "module": "./plugin/index.js",
+  "types": "./plugin/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./plugin/index.d.ts",
+      "import": "./plugin/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^2.7.6",
+    "@frc-web-components/app": "^0.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.7.0"
+  }
+}
